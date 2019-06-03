@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kadirkartal/Documents/kartal/Projects/FrontEnd/AngularTestTask/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/kadirkartal/Documents/kartal/Projects/FrontEnd/1/src/styles.css */"./src/styles.css");
 
 
 /***/ })

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IPagination } from './models/IPagination';
 import { UserService } from './services/userService';
-import { LoaderService } from './services/loadService';
+import { LoaderService } from './services/loaderService';
 import { Subscription } from 'rxjs';
 import { LoaderState } from 'src/app/models/loaderState';
 

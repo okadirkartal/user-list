@@ -1,10 +1,10 @@
-ßimport { Injectable } from "@angular/core";
+import { Injectable } from "@angular/core";
 import { Subject } from 'rxjs';
 import { LoaderState } from '../models/loaderState';
 @Injectable({
     providedIn: 'root'
 })
-ß
+
 export class LoaderService {
 
     private loaderSubject = new Subject<LoaderState>();

@@ -6,12 +6,11 @@ import { AppComponent } from './app.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
  import { NgxPaginationModule } from 'ngx-pagination';
 import { LoaderInterceptorService } from './services/loaderInterceptorService';
-import { LoaderComponent } from './loader/loader/loader.component';
+ 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoaderComponent 
+    AppComponent 
   ],
   imports: [
     BrowserModule,
