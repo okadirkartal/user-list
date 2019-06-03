@@ -1,0 +1,17 @@
+.hidden {
+    visibility: hidden;
+}
+
+.loader-overlay {
+    position: absolute; width: 100%; z-index:500000; top:0;
+}
+
+.loader {
+    height:4px; width:100%; position: absolute; overflow: hidden; background-color: green;
+}
+
+.loader:before {
+    display:block;position: absolute; content:""; left:-200px; width:200px; background-color: red; animation: loading 2s linear; 
+}
+
+ 

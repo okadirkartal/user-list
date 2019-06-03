@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="card">
+  
+
+  <div [class.hidden]="!show">
+    <div class="loader-overlay">
+      <div *ngIf="show" class="loader"></div>
+    </div>
+  </div>
+  
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+          <tr>
+            <td>Id</td>
+            <td>Email</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Avatar</td>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of pages.data | paginate : { itemsPerPage: count,currentPage: p}">
+          <td>{{user.id}}</td>
+          <td>{{user.email}}</td>
+          <td>{{user.first_name}}</td>
+          <td>{{user.last_name}}</td>
+          <td><img src={{user.avatar}} /></td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <pagination-controls  (pageChange)="p= $event"></pagination-controls>
+    </div>
+  </div>
+</div>
+
+
+
+<!--<router-outlet></router-outlet>-->
